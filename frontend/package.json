@@ -1,0 +1,46 @@
+{
+  "name": "sistema-tit",
+  "version": "0.0.1",
+  "description": "SISTEMA-TIT",
+  "productName": "SISTEMA-TIT",
+  "cordovaId": "com.catemporales.aplicaciones.SISTEMA-TIT",
+  "capacitorId": "",
+  "author": "Juan Manuel cruz <director.tic@catemporales.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@casl/ability": "^4.1.6",
+    "@casl/vue": "^1.1.1",
+    "@quasar/extras": "^1.9.10",
+    "axios": "^0.21.1",
+    "js-file-download": "^0.4.12",
+    "leaflet": "^1.7.1",
+    "leaflet-marker-rotation": "^0.3.0",
+    "quasar": "^1.15.0",
+    "vue": "2.6.11",
+    "vue-i18n": "^8.22.1",
+    "vue-moment": "^4.1.0",
+    "vue-signature-pad": "^2.0.2",
+    "vue-sweetalert2": "^2.1.5",
+    "vue-template-compiler": "2.6.11"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.9.6",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^5.10.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^5.0.0"
+  },
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.6.0",
+    "yarn": ">= 1.6.0"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ]
+}

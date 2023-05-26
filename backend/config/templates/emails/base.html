@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <title>Sistema Tecnológico e informático Temporal</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    p.a {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 100%;
+
+    }
+
+    p.b {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 140%;
+
+    }
+
+    p.d {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 80%;
+
+    }
+
+    td.c, th.c {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+
+<table aria-label="encabezado" style="text-align: center; border: 0.3; width: 100%;">
+  <tr>
+    <th>
+      <table aria-label="" style="text-align: center; border: 0; width: 100%;">
+        <tr>
+          <th style="width: 200px;">
+          </th>
+          <th style="text-align: center; padding: 20px 0 30px 0;">
+            <img alt="" src="/Users/juanma/Documents/proyectos/CYA/CyA%20Temporales/backend/config/public/images/logo.png"
+                 width="90"
+                 height="110" style="display: block;">
+          </th>
+          <th>
+            <p class="b" style="text-align: center;">
+              Sistema Tecnológico e informático Temporal 
+              <br> SISTEMA TIT
+            </p>
+          </th>
+          <th style="width: 200px;">
+          </th>
+        </tr>
+      </table>
+    </th>
+  </tr>
+  <th>
+    <div style="height:3px; background-color:#26B99A"></div>
+  </th>
+</table>
+
+
+<table aria-label="contenido" style="text-align: center; border: 0.3; width: 100%; background-color:#e7e7e7">
+  <th></th>
+</table>
+
+{% if contenido %}
+  {{contenido|safe}}
+{% endif %}
+
+<hr>
+<p style="text-align: center; font-weight: bold">
+  Por favor no responda a este mensaje, es un envío automático.
+</p>
+<br>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+version: "3.7"
+services:
+  dev-sistema-tit-frontend:
+    build:
+      context: ./frontend/
+      target: 'develop-stage'
+    image: dev-sistema-tit-frontend
+    container_name: dev-sistema-tit-frontend
+    command: sh -c 'npm install && quasar d'
+    ports:
+      - 8080:8080
+    volumes:
+      - ./frontend:/app
+    restart: "no"
+    depends_on:
+      - dev-sistema-tit-backend
+  dev-sistema-tit-backend:
+    build:
+      dockerfile: Dockerfile
+      context: backend/
+      args:
+        requirements: requirements/desarrollo.txt
+    image: dev-sistema-tit-backend
+    restart: "no"
+    container_name: dev-sistema-tit-backend
+    command: sh -c 'python /app/manage.py migrate && python /app/manage.py runserver
+      0.0.0.0:8000'
+    ports:
+      - 8000:8000
+    volumes:
+      - ./backend:/app
+    environment:
+      - DJANGO_SETTINGS_MODULE=config.settings.desarrollo
+    depends_on:
+      - dev-sistema-tit-db
+  dev-sistema-tit-db:
+    restart: "no"
+    image: postgres:alpine
+    container_name: dev-sistema-tit-db
+    ports:
+      - 5439:5432
+    environment:
+      - POSTGRES_USER=sistema-tit
+      - POSTGRES_PASSWORD=sistema-tit
+      - POSTGRES_DB=sistema-tit
+    volumes:
+      - sistema-tit_postgresql_data_desarrollo:/var/lib/postgresql/data
+volumes:
+  sistema-tit_postgresql_data_desarrollo:
