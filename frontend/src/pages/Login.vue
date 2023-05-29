@@ -6,7 +6,7 @@
       </div>
       <div class="row">
         <q-card square bordered class="q-pa-lg shadow-1">
-          <img alt="" src="~assets/images/logo.png" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
+          <img alt="" src="~assets/images/logo.png" style="width: 100%; display: block; margin-left: auto; margin-right: auto;">
           <q-form @submit="login" ref="formLogin">
             <q-card-section>
               <q-form class="q-gutter-md">

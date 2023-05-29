@@ -1,11 +1,11 @@
 {
-  "name": "sistema-tit",
+  "name": "temponomina",
   "version": "0.0.1",
-  "description": "SISTEMA-TIT",
-  "productName": "SISTEMA-TIT",
-  "cordovaId": "com.catemporales.aplicaciones.SISTEMA-TIT",
+  "description": "TempoNomina",
+  "productName": "TempoNomina",
+  "cordovaId": "com.TempoNomina.aplicaciones.TempoNomina",
   "capacitorId": "",
-  "author": "Juan Manuel cruz <director.tic@catemporales.com>",
+  "author": "Richard Sánchez Bedoya <r.sanchez02@ciaf.edu.co>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
