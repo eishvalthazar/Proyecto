@@ -29,6 +29,7 @@ services:
       - 8000:8000
     volumes:
       - ./backend:/app
+      - ./scripts:/scripts
     environment:
       - DJANGO_SETTINGS_MODULE=config.settings.desarrollo
     depends_on:
